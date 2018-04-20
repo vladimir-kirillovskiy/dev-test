@@ -8,7 +8,7 @@ $twig = new Twig_Environment($loader, ['debug' => true]);
 //Get the episodes from the API
 $client = new GuzzleHttp\Client();
 $res = $client->request('GET', 'http://3ev.org/dev-test-api/');
-$data = json_decode($resgit ->getBody(), true);
+$data = json_decode($res ->getBody(), true);
 
 $season_list = [];
 // Filter by season
